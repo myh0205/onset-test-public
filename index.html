@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+  <html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>습관 트래커</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>오늘의 습관</h1>
+      <div class="date" id="today"></div>
+
+      <div class="add-habit">
+        <input type="text" id="habitInput" placeholder="새 습관 추가...">
+        <button onclick="addHabit()">추가</button>
+      </div>
+
+      <ul class="habit-list" id="habitList"></ul>
+
+      <div class="stats">
+        <span id="doneCount">0</span> / <span id="totalCount">0</span> 완료
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+  </html>
